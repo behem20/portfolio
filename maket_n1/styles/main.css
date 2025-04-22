@@ -1,0 +1,246 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /*transition: .5s ease-in-out; /* добавим плавность переходов для всех элементов страницы*/
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    display: block;
+    width: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-weight: normal;
+
+}
+
+body {
+
+    font-size: 14px;
+    line-height: 1;
+    color: #373737;
+    background: #f7f7f7;
+}
+
+header:after,
+.container:after,
+footer:after,
+.widget-posts-list li:after,
+#subscribe:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    font-family: 'Montserrat';
+    background-color: #fff;
+}
+
+.header {
+    color: white;
+    background-color: #4694DC;
+    padding-top: 82px;
+    padding-bottom: 82px;
+    min-height: 500px;
+}
+
+.headerContainer {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 156px;
+}
+
+.headerTitle {
+    font-size: 56px;
+    font-weight: 600;
+    margin-bottom: 41px;
+    padding-top: 44px;
+}
+
+.hederText {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 437px;
+    margin-bottom: 47px;
+}
+
+.headerButton {
+    width: 194px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+    border-style: none;
+    background-color: #fff;
+    font-family: 'Montserrat';
+}
+
+/*Services*/
+.services {
+    text-align: center;
+    padding-top: 103px;
+    margin-bottom: 30px;
+}
+
+.servicesContainer {
+    max-width: 888px;
+    margin: 0 auto;
+}
+
+.servicesTitle {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3.3px;
+    margin-bottom: 26px;
+    text-transform: uppercase;
+
+}
+
+.servicesText {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 465px;
+    height: 48px;
+    margin: 0 auto;
+    margin-bottom: 118px;
+    letter-spacing: 0.7px;
+    color: #9CA3AF;
+}
+
+.servicesBlocks {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.servicesBlock {
+    width: 280px;
+    height: 99px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.servicesBlockImg {
+    margin: 0 auto;
+    align-self: center;
+}
+
+.servicesBlockText {
+    font-size: 16px;
+    color: #9CA3AF;
+}
+
+/*Members*/
+.members{
+margin-bottom: 150px;
+}
+.membersContainer{
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 173px;
+}
+.membersTitle{
+    margin-bottom: 26px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3.3px;
+    padding-left: 5px;
+}
+.membersText{
+    margin-bottom: 30px;
+    font-size: 16px;
+    letter-spacing: 0.7px;
+    line-height: 24px;
+    max-width: 465px;
+    margin: 0 auto;
+    margin-bottom: 78px;
+    color: #9CA3AF;
+}
+.membersBlocks {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+.membersBlock {
+    display: flex;
+    max-width: 260px;
+    width: 100%;
+    min-height: 76px;
+    display: flex;
+    border-radius: 11px;
+    box-shadow: 0px 4px 70px 0px rgba(91,93,99,0.06);
+    
+}
+.memberBlockInfo{
+    
+}
+.membersBlockImg {
+    padding-left: 20px;
+    padding-top: 21px;
+    padding-bottom: 20px;
+    margin-right: 8px;
+}
+.membersBlockName {
+    color: black;
+    line-height: 26px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 17px;
+    margin-bottom: -7px;
+}
+.membersBlockJobtitle {
+    color: #9CA3AF;
+    font-size: 11px;
+    font-style: italic;
+    line-height: 26px;
+}
+
+
+/* Media */
+@media screen and (max-width: 768px) {
+    .headerContainer {
+
+        padding: 0 15px;
+    }
+
+    .servicesBlocks {
+        flex-direction: column;
+        align-items: center;
+    }
+    .membersBlocks {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .headerTitle {
+        font-size: 36px;
+    }
+}
